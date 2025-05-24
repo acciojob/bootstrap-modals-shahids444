@@ -13,7 +13,13 @@
 <body>
 
   <!-- Button to open modal -->
-  <button id="open-modal" type="button" class="btn btn-primary">
+  <button
+    id="open-modal"
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#newton-modal"
+  >
     Open Modal
   </button>
 
@@ -42,14 +48,6 @@
 
   <!-- Bootstrap 5 JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    // JavaScript to open modal when button is clicked
-    const modal = new bootstrap.Modal(document.getElementById('newton-modal'));
-    document.getElementById('open-modal').addEventListener('click', () => {
-      modal.show();
-    });
-  </script>
 
 </body>
 </html>
